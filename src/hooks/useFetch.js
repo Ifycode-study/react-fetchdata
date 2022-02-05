@@ -40,3 +40,5 @@ export const useFetch = (url) => {
 
     return { data, isPending, error };
 }
+
+//See lesson 57: useEffect gotcha - infinite loops for how to treat objects and arrays with useEffect.
