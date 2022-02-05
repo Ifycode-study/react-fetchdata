@@ -6,7 +6,7 @@ export const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchTrips = async () => {
+        const fetchData = async () => {
             setIsPending(true);
 
             try {
@@ -25,7 +25,7 @@ export const useFetch = (url) => {
                 console.log(err.message);
             }
         };
-        fetchTrips();
+        fetchData();
     }, [url]);
 
     return { data, isPending, error };
